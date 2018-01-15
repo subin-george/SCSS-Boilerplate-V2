@@ -1,0 +1,29 @@
+// Tables
+// --------------------------------------------------
+
+table {
+  border-collapse: collapse;
+  margin: 15px 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border: 2px solid $base-border-color;
+  font-weight: 600;
+  padding: 8px;
+  text-align: left;
+  background: $base-color;
+  color: #fff;
+}
+
+td {
+  border: 2px solid $base-border-color;
+  padding: 8px;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

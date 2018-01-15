@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html {  
+   font-size: 16px;
+   overflow-x: hidden;
+}
+
+body {  
+  color: $text-color;
+  background-color: #fff;
+  font-family: $base-font;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: $base-color;
+}
+
+::selection {
+  color: #fff;
+  background: $base-color;
+}
+
+
+input,
+select,
+textarea,
+button {  
+  &:hover,&:focus,&:active{
+    outline: 0;
+  }
+}
+
+
+hr{
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  @include clearfix();
+}
+
+.browserupgrade {
+    background: #f00;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 0.8em;
+    width: 100%;
+    position: fixed;
+    left: 0;top: 0;
+    z-index: 9999;
+    a{
+      font-weight: bold;
+      color: #ff0;
+    }
+}
+
+.cf{
+  @include clearfix();
+}
+
+iframe[name='google_conversion_frame'] { 
+   height: 0 !important;
+   width: 0 !important; 
+   line-height: 0 !important; 
+   font-size: 0 !important;
+   margin-top: -13px;
+   float: left;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align:middle;
+}
+
+figure{
+  margin:0;
+  padding:0;
+}
