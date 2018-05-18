@@ -10,18 +10,18 @@ html {
 body {  
   color: $text-color;
   background-color: #fff;
-  font-family: $base-font;
+  font-family: $primary-font;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: $base-color;
+  background: $primary-color;
 }
 
 ::selection {
   color: #fff;
-  background: $base-color;
+  background: $primary-color;
 }
 
 
@@ -63,6 +63,8 @@ hr{
 
 .cf{
   @include clearfix();
+  display: block;
+  clear: both;
 }
 
 iframe[name='google_conversion_frame'] { 
