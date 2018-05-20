@@ -1,1 +1,3 @@
-# SCSS Boilerplate V2
+# SCSS Boilerplate
+
+:- Bootstrap 4.1 CDN
